@@ -38,14 +38,11 @@
 			    		<h2 class="wow swing">
 			    			<span class="icon-study">
 							</span>
-							程序<span>媛</span>专场
+							春季程序<span>媛</span>专场
 						</h2>
 			    		<div class="zhuanchang-title">
-			    			<div class="zhuanchang-time wow flipInX">
-			    				2015年4月9日
-			    			</div>
 			    			<div class="zhuanchang-place wow flipInX">
-			    				北京交通大学
+			    				做程序媛，魅力女性
 			    			</div>
 			    		</div>
 		    		</div>
@@ -239,12 +236,10 @@ Talk is cheap, Show me the code；<br/>
 						<span class="icon-calendar">
 						</span>
 						<h2>招聘流程</h2>
-						<p>
-							说明：非北京地区不包含宣讲会环节，且最终面试将单独安排时间。
-						</p>
 		    		</div>
 		    		<section class="progress">
-			    		<ul>
+			    		<div class="progress-box">
+				    		<ul>
 			                <li>
 			                    <a href="javascript:;" class="circle-box">
 			                        <span class="icon-profile">
@@ -311,7 +306,13 @@ Talk is cheap, Show me the code；<br/>
 			                    	游戏＋面试
 			                    </p>
 			                </li>
-			            </ul>
+				            </ul>
+
+				            <p class="intro">
+								说明：非北京地区不包含"宣讲会＋笔试"环节，且最终面试将单独安排时间。
+							</p>
+						</div>
+
 			            <div class="arrows">
 			            	<div class="arrow1">
 			            		<span class="icon-arrow-right2">
@@ -389,8 +390,10 @@ Talk is cheap, Show me the code；<br/>
 	</div>
     <footer>
     	<div class="bottom-arrow">
-    		<span class="icon-arrow-down">
-			</span>
+    		<a class="page-down-btn" href="javascript:;">
+    			<span class="icon-arrow-down">
+				</span>
+			</a>
     	</div>
 		<div class="bottom-nav">
 			<ul>
@@ -427,6 +430,7 @@ Talk is cheap, Show me the code；<br/>
     			scrollOverflow:true,
     			css3:true,
     			afterLoad: function(anchorLink, index){
+
     				$(".bottom-nav ul li").eq(index-1).addClass("active").siblings().removeClass("active");
 
     				if(index == 4) {
@@ -436,6 +440,11 @@ Talk is cheap, Show me the code；<br/>
     				}
     			}
     		});
+
+    		//页面底部按钮向下全屏滚动功能
+    		$(".page-down-btn").click(function(){
+    			$.fn.fullpage.moveSectionDown();				
+    		})
 
     		//动画效果
     		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
@@ -454,8 +463,8 @@ Talk is cheap, Show me the code；<br/>
 			(function(){
 
 				setTimeout(function(){
-					$(".employee").fadeIn(2000);
-				},800);
+					$(".employee").fadeIn(1500);
+				},500);
 
 				var currentEmployeeSildeNumber = 0;
 				var autoSildeInterval = setInterval(function(){
