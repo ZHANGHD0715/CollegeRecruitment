@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p551/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 23, ../sass/screen.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 27, ../sass/screen.scss */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* line 32, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 35, ../sass/screen.scss */
+h2 {
+  color: #ED5CA1;
+  font-size: 46px;
+  line-height: 80px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* line 42, ../sass/screen.scss */
+h3 {
+  color: #444;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 900;
+  text-align: center;
+}
+/* line 48, ../sass/screen.scss */
+h3 span {
+  font-size: 38px;
+  position: relative;
+  top: 8px;
+}
+
+/* line 54, ../sass/screen.scss */
+h4 {
+  color: #ED5CA1;
+  line-height: 45px;
+  font-size: 34px;
+}
+/* line 58, ../sass/screen.scss */
+h4 span {
+  color: #227722;
+  font-size: 32px;
+  padding-left: 30px;
+}
+
+/* line 64, ../sass/screen.scss */
+h5 {
+  color: #ED5CA1;
+  line-height: 35px;
+  font-size: 36px;
+  text-align: left;
+}
+/* line 69, ../sass/screen.scss */
+h5 span {
+  color: #26AA5B;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+/* line 75, ../sass/screen.scss */
+h6 {
+  color: #222277;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* line 82, ../sass/screen.scss */
+.btn-radius {
+  padding: 10px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #ED5CA1;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 89, ../sass/screen.scss */
+.shadow {
+  box-shadow: 0 1px 12px #444;
+}
+
+/* line 92, ../sass/screen.scss */
+header {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  z-index: 8;
+  width: 100%;
+}
+/* line 98, ../sass/screen.scss */
+header .header_logo {
+  position: relative;
+  padding-left: 100px;
+}
+/* line 101, ../sass/screen.scss */
+header .header_logo img {
+  position: absolute;
+  width: 180px;
+  top: 2px;
+}
+/* line 106, ../sass/screen.scss */
+header .header_logo h3 {
+  position: absolute;
+  left: 290px;
+  top: 0;
+}
+/* line 112, ../sass/screen.scss */
+header .links {
+  float: right;
+  padding-right: 40px;
+}
+/* line 115, ../sass/screen.scss */
+header .links a {
+  display: block;
+  float: right;
+}
+/* line 119, ../sass/screen.scss */
+header .links .weibo-link {
+  margin-top: 4px;
+  margin-right: 20px;
+  color: #444;
+}
+/* line 123, ../sass/screen.scss */
+header .links .weibo-link img {
+  width: 30px;
+  position: relative;
+  top: 3px;
+}
+/* line 130, ../sass/screen.scss */
+header .links .join-us span {
+  color: #fff;
+}
+/* line 133, ../sass/screen.scss */
+header .links .join-us:hover {
+  color: #ED5CA1;
+  background-color: #f1f1f1;
+  transition: color .5s linear, background-color .5s linear;
+}
+/* line 137, ../sass/screen.scss */
+header .links .join-us:hover span:before {
+  color: #ED5CA1;
+}
+
+/* line 144, ../sass/screen.scss */
+.bg-container {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/* line 153, ../sass/screen.scss */
+.section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 157, ../sass/screen.scss */
+.section .main {
+  margin: 0 auto;
+  width: 980px;
+  height: 520px;
+  position: relative;
+  top: -40px;
+}
+/* line 164, ../sass/screen.scss */
+.section .section-header {
+  overflow: auto;
+  margin-bottom: 28px;
+}
+/* line 167, ../sass/screen.scss */
+.section .section-header span {
+  font-size: 40px;
+  float: left;
+  position: relative;
+  top: 18px;
+}
+/* line 173, ../sass/screen.scss */
+.section .section-header h2 {
+  float: left;
+  font-size: 40px;
+  padding-left: 18px;
+}
+/* line 178, ../sass/screen.scss */
+.section .section-header p {
+  float: left;
+  padding-top: 42px;
+  padding-left: 14px;
+  color: #666;
+}
+
+/* line 187, ../sass/screen.scss */
+#section1 {
+  background: #f3f3f3 url(../images/bg-trans1.png) bottom center no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 191, ../sass/screen.scss */
+#section2 {
+  background: #e4e4e4 url(../images/2.png) bottom center no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 195, ../sass/screen.scss */
+#section3 {
+  background: #f3f3f3 url(../images/3.png) bottom center no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 199, ../sass/screen.scss */
+#section4 {
+  background: #e4e4e4 url(../images/1.png) bottom center no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 204, ../sass/screen.scss */
+.index .index-title {
+  position: relative;
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 209, ../sass/screen.scss */
+.index h2 {
+  position: absolute;
+  left: 240px;
+  top: 0;
+}
+/* line 213, ../sass/screen.scss */
+.index h2 span {
+  font-size: 50px;
+}
+/* line 217, ../sass/screen.scss */
+.index .zhuanchang-time {
+  position: absolute;
+  left: 570px;
+  top: 19px;
+  background: #26AA5B;
+  color: #f1f1f1;
+  padding: 2px 3px;
+  font-size: 17px;
+}
+/* line 226, ../sass/screen.scss */
+.index .zhuanchang-place {
+  position: absolute;
+  left: 610px;
+  top: 39px;
+  background: #ED5CA1;
+  color: #f1f1f1;
+  font-size: 22px;
+  padding: 2px 3px;
+}
+
+/* line 236, ../sass/screen.scss */
+.index-nav {
+  margin-top: 100px;
+}
+/* line 238, ../sass/screen.scss */
+.index-nav li {
+  display: inline-block;
+  width: 24%;
+}
+/* line 241, ../sass/screen.scss */
+.index-nav li a {
+  background: #f1f1f1;
+  display: block;
+  margin: 0 auto;
+}
+/* line 245, ../sass/screen.scss */
+.index-nav li a span {
+  position: relative;
+  left: 35px;
+  top: 30px;
+  font-size: 50px;
+}
+/* line 251, ../sass/screen.scss */
+.index-nav li a:hover {
+  background: #ED5CA1;
+  transition: all 0.8s linear;
+}
+/* line 252, ../sass/screen.scss */
+.index-nav li a:hover span:before {
+  color: #fff;
+}
+/* line 259, ../sass/screen.scss */
+.index-nav li p {
+  color: #444;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 266, ../sass/screen.scss */
+.index-nav li p span {
+  font-weight: normal;
+  font-size: 14px;
+}
+/* line 271, ../sass/screen.scss */
+.index-nav li p:hover {
+  color: #ED5CA1;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+/* line 276, ../sass/screen.scss */
+.index-nav li .circle-box {
+  width: 115px;
+  height: 115px;
+  overflow: hidden;
+  -moz-border-radius: 115px;
+  -webkit-border-radius: 115px;
+  border-radius: 115px;
+}
+/* line 18, ../sass/screen.scss */
+.index-nav li .circle-box img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 281, ../sass/screen.scss */
+.employee {
+  text-align: center;
+  position: relative;
+  display: none;
+}
+/* line 286, ../sass/screen.scss */
+.employee .employee-slide .employee-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 292, ../sass/screen.scss */
+.employee .employee-slide img {
+  display: block;
+  height: 420px;
+}
+/* line 296, ../sass/screen.scss */
+.employee .employee-slide .employee-content {
+  position: absolute;
+  width: 550px;
+  left: 420px;
+  top: 80px;
+  color: #444;
+  text-align: left;
+}
+/* line 303, ../sass/screen.scss */
+.employee .employee-slide .employee-content p {
+  margin-bottom: 45px;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: italic;
+  position: relative;
+  padding-left: 60px;
+  font-weight: lighter;
+}
+/* line 311, ../sass/screen.scss */
+.employee .employee-slide .employee-content p span {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 50px;
+}
+/* line 318, ../sass/screen.scss */
+.employee .employee-slide .employee-content h5, .employee .employee-slide .employee-content h6 {
+  padding-left: 60px;
+}
+/* line 321, ../sass/screen.scss */
+.employee ul {
+  position: absolute;
+  right: 10px;
+  top: 328px;
+}
+/* line 325, ../sass/screen.scss */
+.employee ul li {
+  width: 70px;
+  display: inline-block;
+  padding: 10px;
+}
+/* line 329, ../sass/screen.scss */
+.employee ul li a {
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+/* line 333, ../sass/screen.scss */
+.employee ul li a img {
+  opacity: 0.45;
+}
+/* line 337, ../sass/screen.scss */
+.employee ul li .circle-box {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  -moz-border-radius: 65px;
+  -webkit-border-radius: 65px;
+  border-radius: 65px;
+}
+/* line 18, ../sass/screen.scss */
+.employee ul li .circle-box img {
+  width: 100%;
+  height: 100%;
+}
+/* line 342, ../sass/screen.scss */
+.employee ul li.active a {
+  position: relative;
+  top: 5px;
+}
+/* line 345, ../sass/screen.scss */
+.employee ul li.active a img {
+  opacity: 1;
+}
+/* line 349, ../sass/screen.scss */
+.employee ul li.active .circle-box {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+}
+/* line 18, ../sass/screen.scss */
+.employee ul li.active .circle-box img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 357, ../sass/screen.scss */
+.about-us .about-us-content {
+  width: 45%;
+  display: inline-block;
+}
+/* line 361, ../sass/screen.scss */
+.about-us p {
+  color: #444;
+  text-indent: 2.0em;
+  line-height: 29px;
+  padding-bottom: 11px;
+}
+/* line 367, ../sass/screen.scss */
+.about-us .about-us-right {
+  width: 50%;
+  float: right;
+  position: relative;
+}
+/* line 371, ../sass/screen.scss */
+.about-us .about-us-right img.video-pic {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 400px;
+  height: 250px;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 378, ../sass/screen.scss */
+.about-us .about-us-right .video-icon {
+  position: absolute;
+  left: 160px;
+  top: 88px;
+  cursor: pointer;
+}
+/* line 383, ../sass/screen.scss */
+.about-us .about-us-right .video-icon span {
+  opacity: 0.80;
+  font-size: 80px;
+}
+/* line 386, ../sass/screen.scss */
+.about-us .about-us-right .video-icon span:hover {
+  opacity: 0.95;
+}
+/* line 391, ../sass/screen.scss */
+.about-us .about-us-right .about-us-list {
+  position: relative;
+  margin-top: 30px;
+  padding-right: 50px;
+}
+/* line 395, ../sass/screen.scss */
+.about-us .about-us-right .about-us-list h6 {
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+/* line 400, ../sass/screen.scss */
+.about-us .about-us-right .about-us-list ul {
+  margin-top: 2px;
+  list-style: circle;
+}
+/* line 404, ../sass/screen.scss */
+.about-us .about-us-right .about-us-list li {
+  line-height: 34px;
+  margin-left: 20px;
+  padding-right: 26px;
+  float: left;
+}
+/* line 409, ../sass/screen.scss */
+.about-us .about-us-right .about-us-list li a {
+  color: #ED5CA1;
+}
+/* line 411, ../sass/screen.scss */
+.about-us .about-us-right .about-us-list li a:hover {
+  text-decoration: underline;
+}
+
+/* line 420, ../sass/screen.scss */
+.positions ul {
+  background: url(../images/color-logo.png) top right no-repeat;
+  background-size: auto 100%;
+}
+/* line 424, ../sass/screen.scss */
+.positions ul li {
+  width: 40%;
+  display: inline-block;
+  background: #fff;
+  border-top: 3px solid #26AA5B;
+  margin-right: 3%;
+  padding: 2% 3% 3%;
+}
+/* line 431, ../sass/screen.scss */
+.positions ul li p {
+  text-align: left;
+  color: #444;
+  padding-top: 20px;
+  line-height: 26px;
+  font-size: 14px;
+}
+/* line 437, ../sass/screen.scss */
+.positions ul li p label {
+  font-weight: bold;
+}
+/* line 441, ../sass/screen.scss */
+.positions ul li h4 {
+  color: #26AA5B;
+  font-size: 30px;
+}
+
+/* line 447, ../sass/screen.scss */
+.cities {
+  position: relative;
+  .city-items-background-color: #fff;
+  .city-items-padding-top: 10px;
+}
+/* line 453, ../sass/screen.scss */
+.cities .city-item {
+  display: inline-block;
+  width: 22%;
+  margin-right: 30px;
+  padding: 60px 0 0;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 461, ../sass/screen.scss */
+.cities .city-item .city-name {
+  background: rgba(44, 44, 44, 0.85);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 26px;
+  color: #f1f1f1;
+  padding: 0 10px;
+}
+/* line 472, ../sass/screen.scss */
+.cities .city-item .city-content {
+  background: #fff;
+  height: 100%;
+}
+/* line 475, ../sass/screen.scss */
+.cities .city-item .city-content p {
+  color: #444;
+  font-size: 14px;
+  padding: 10px 10px;
+  line-height: 20px;
+}
+/* line 483, ../sass/screen.scss */
+.cities .city1 {
+  background: #fff url(../images/city-beijing.jpg) 0 -40px no-repeat;
+  background-size: 100% auto;
+}
+/* line 486, ../sass/screen.scss */
+.cities .city1 a {
+  background: #ED312F;
+}
+/* line 490, ../sass/screen.scss */
+.cities .city2 {
+  background: #fff url(../images/city-xian.jpg) 0 -45px no-repeat;
+  background-size: 100% auto;
+}
+/* line 493, ../sass/screen.scss */
+.cities .city2 a {
+  background: #00AA5B;
+}
+/* line 497, ../sass/screen.scss */
+.cities .city3 {
+  background: #fff url(../images/city-chendu.jpg) 0 -28px no-repeat;
+  background-size: 100% auto;
+}
+/* line 500, ../sass/screen.scss */
+.cities .city3 a {
+  background: #F68934;
+}
+/* line 504, ../sass/screen.scss */
+.cities .city4 {
+  background: #fff url(../images/city-wuhan.jpg) 0 -10px no-repeat;
+  background-size: 100% auto;
+}
+/* line 507, ../sass/screen.scss */
+.cities .city4 a {
+  background: #0078BF;
+}
+/* line 511, ../sass/screen.scss */
+.cities .city-title {
+  position: absolute;
+  left: 410px;
+  top: -45px;
+  padding: 0 10px;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+/* line 520, ../sass/screen.scss */
+.progress {
+  padding-top: 20px;
+  margin-bottom: 110px;
+  position: relative;
+}
+/* line 524, ../sass/screen.scss */
+.progress li {
+  display: inline-block;
+  width: 16%;
+}
+/* line 527, ../sass/screen.scss */
+.progress li a {
+  background: #f1f1f1;
+  display: block;
+  margin: 0 auto;
+}
+/* line 531, ../sass/screen.scss */
+.progress li a span {
+  position: relative;
+  left: 26px;
+  top: 26px;
+  font-size: 40px;
+}
+/* line 537, ../sass/screen.scss */
+.progress li a span.icon-profile:before {
+  color: #26AA5B;
+}
+/* line 540, ../sass/screen.scss */
+.progress li a:hover {
+  background: #ED5CA1;
+  transition: all 0.8s linear;
+}
+/* line 541, ../sass/screen.scss */
+.progress li a:hover span:before {
+  color: #fff;
+}
+/* line 548, ../sass/screen.scss */
+.progress li p {
+  color: #444;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* line 555, ../sass/screen.scss */
+.progress li p span {
+  font-size: 14px;
+  line-height: 24px;
+}
+/* line 560, ../sass/screen.scss */
+.progress li p:hover {
+  color: #ED5CA1;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+/* line 565, ../sass/screen.scss */
+.progress li .circle-box {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  -moz-border-radius: 90px;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+}
+/* line 18, ../sass/screen.scss */
+.progress li .circle-box img {
+  width: 100%;
+  height: 100%;
+}
+/* line 570, ../sass/screen.scss */
+.progress .arrows .arrow1 {
+  position: absolute;
+  left: 148px;
+  top: 53px;
+}
+/* line 575, ../sass/screen.scss */
+.progress .arrows .arrow2 {
+  position: absolute;
+  left: 308px;
+  top: 53px;
+}
+/* line 580, ../sass/screen.scss */
+.progress .arrows .arrow3 {
+  position: absolute;
+  left: 468px;
+  top: 53px;
+}
+/* line 585, ../sass/screen.scss */
+.progress .arrows .arrow4 {
+  position: absolute;
+  left: 630px;
+  top: 53px;
+}
+/* line 590, ../sass/screen.scss */
+.progress .arrows .arrow5 {
+  position: absolute;
+  left: 796px;
+  top: 53px;
+}
+/* line 595, ../sass/screen.scss */
+.progress .arrows span {
+  font-size: 30px;
+  color: #26AA5B;
+}
+
+/* line 601, ../sass/screen.scss */
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  color: #ddd;
+}
+/* line 608, ../sass/screen.scss */
+footer .bottom-arrow {
+  width: 30px;
+  height: 52px;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+/* line 613, ../sass/screen.scss */
+footer .bottom-arrow span {
+  font-size: 30px;
+}
+/* line 616, ../sass/screen.scss */
+footer .bottom-arrow:hover {
+  height: 50px;
+  transition: all .2s linear;
+}
+/* line 621, ../sass/screen.scss */
+footer .bottom-nav {
+  background: #ED5CA1;
+  height: 39px;
+  font-size: 17px;
+}
+/* line 625, ../sass/screen.scss */
+footer .bottom-nav ul {
+  width: 564px;
+  margin: 0 auto;
+}
+/* line 628, ../sass/screen.scss */
+footer .bottom-nav ul li {
+  float: left;
+  line-height: 39px;
+  padding: 0 40px;
+}
+/* line 632, ../sass/screen.scss */
+footer .bottom-nav ul li a {
+  color: #f1f1f1;
+}
+/* line 636, ../sass/screen.scss */
+footer .bottom-nav ul li.active {
+  line-height: 37px;
+  background: #f1f1f1;
+  border-top: 2px solid #ED5CA1;
+  position: relative;
+  top: -2px;
+}
+/* line 642, ../sass/screen.scss */
+footer .bottom-nav ul li.active a {
+  color: #ED5CA1;
+}
+/* line 648, ../sass/screen.scss */
+footer .copyright {
+  background: #444;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  clear: both;
+}
+/* line 654, ../sass/screen.scss */
+footer .copyright p {
+  padding: 0 30px;
+}
+/* line 656, ../sass/screen.scss */
+footer .copyright p span {
+  float: right;
+}
+/* line 659, ../sass/screen.scss */
+footer .copyright p a {
+  color: #f1f1f1;
+}
+/* line 661, ../sass/screen.scss */
+footer .copyright p a:hover {
+  text-decoration: underline;
+}
+
+/* line 668, ../sass/screen.scss */
+#fp-nav ul li {
+  margin: 22px 4px;
+}
+/* line 671, ../sass/screen.scss */
+#fp-nav ul li a span {
+  width: 15px;
+  height: 15px;
+  background: #999;
+  border: none;
+}
+/* line 677, ../sass/screen.scss */
+#fp-nav ul li a.active span {
+  background: #ED5CA1;
+}
+/* line 681, ../sass/screen.scss */
+#fp-nav ul li .fp-tooltip {
+  top: 3px;
+}
+/* line 684, ../sass/screen.scss */
+#fp-nav ul li .fp-tooltip.left {
+  left: 25px;
+}
+
+/* line 688, ../sass/screen.scss */
+.weixin {
+  position: fixed;
+  right: 40px;
+  bottom: 80px;
+}
+/* line 692, ../sass/screen.scss */
+.weixin img {
+  width: 115px;
+  height: 115px;
+}
+/* line 696, ../sass/screen.scss */
+.weixin p {
+  color: #444;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-mn2bis");
+  src: url("../fonts/icomoon.eot?#iefix-mn2bis") format("embedded-opentype"), url("../fonts/icomoon.woff?-mn2bis") format("woff"), url("../fonts/icomoon.ttf?-mn2bis") format("truetype"), url("../fonts/icomoon.svg?-mn2bis#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 711, ../sass/screen.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+}
+
+/* line 725, ../sass/screen.scss */
+.icon-office:before {
+  content: "\e602";
+  color: #ED5CA1;
+}
+
+/* line 730, ../sass/screen.scss */
+.icon-newspaper:before {
+  content: "\e603";
+  color: #ED5CA1;
+}
+
+/* line 735, ../sass/screen.scss */
+.icon-pencil:before {
+  content: "\e606";
+  color: #26AA5B;
+}
+
+/* line 740, ../sass/screen.scss */
+.icon-bullhorn:before {
+  content: "\e607";
+  color: #26AA5B;
+}
+
+/* line 745, ../sass/screen.scss */
+.icon-profile:before {
+  content: "\e604";
+  color: #ED5CA1;
+}
+
+/* line 750, ../sass/screen.scss */
+.icon-file:before {
+  content: "\e608";
+}
+
+/* line 754, ../sass/screen.scss */
+.icon-phone:before {
+  content: "\e609";
+  color: #26AA5B;
+}
+
+/* line 759, ../sass/screen.scss */
+.icon-location:before {
+  content: "\e60a";
+}
+
+/* line 763, ../sass/screen.scss */
+.icon-calendar:before {
+  content: "\e60b";
+  color: #ED5CA1;
+}
+
+/* line 768, ../sass/screen.scss */
+.icon-screen:before {
+  content: "\e60c";
+  color: #26AA5B;
+}
+
+/* line 773, ../sass/screen.scss */
+.icon-users:before {
+  content: "\e605";
+  color: #ED5CA1;
+}
+
+/* line 778, ../sass/screen.scss */
+.icon-user:before {
+  content: "\e60d";
+  color: #26AA5B;
+}
+
+/* line 783, ../sass/screen.scss */
+.icon-search:before {
+  content: "\e60e";
+  color: #26AA5B;
+}
+
+/* line 788, ../sass/screen.scss */
+.icon-wrench:before {
+  content: "\e60f";
+  color: #26AA5B;
+}
+
+/* line 793, ../sass/screen.scss */
+.icon-play:before {
+  content: "\e610";
+  color: #f1f1f1;
+}
+
+/* line 798, ../sass/screen.scss */
+.icon-arrow-right:before {
+  content: "\e612";
+}
+
+/* line 802, ../sass/screen.scss */
+.icon-arrow-right2:before {
+  content: "\e613";
+}
+
+/* line 806, ../sass/screen.scss */
+.icon-arrow-right3:before {
+  content: "\e614";
+}
+
+/* line 810, ../sass/screen.scss */
+.icon-arrow-down:before {
+  content: "\e600";
+  color: #888;
+}
+
+/* line 815, ../sass/screen.scss */
+.icon-file-xml:before {
+  content: "\e611";
+}
+
+/* line 819, ../sass/screen.scss */
+.icon-study:before {
+  content: "\e601";
+  color: #ED5CA1;
+}
