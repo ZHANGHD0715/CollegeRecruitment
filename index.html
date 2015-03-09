@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <title>ThoughtWorks2015校园招聘</title>
     <link rel="stylesheet" href="stylesheets/jquery.fullPage.css">
-    <link rel="stylesheet" href="stylesheets/screen.css">
+    <link rel="stylesheet" media="screen" href="stylesheets/screen.css">
     <link rel="stylesheet" href="stylesheets/animate.min.css">
 </head>
 
 <body>
     <div class="bg-container">
     </div>
-    <header>
+    <header id="header">
         <div class="header_logo">
         	<a href="#" title="home page">
             	<img alt="ThoughtWorks logo" id="tw-logo" src="images/tw-logo.png">
@@ -388,7 +388,7 @@ Talk is cheap, Show me the code；<br/>
 		    </div>
 	    </div>
 	</div>
-    <footer>
+    <footer id="footer">
     	<div class="bottom-arrow">
     		<a class="page-down-btn" href="javascript:;">
     			<span class="icon-arrow-down">
@@ -414,12 +414,13 @@ Talk is cheap, Show me the code；<br/>
 		</div>	
 	</footer>
 	<div class="weixin wow swing">
-		<p>看微信<br/>更多我们的故事</p>
-		<img src="images/weixin.png" >
+		<p><a href="javascript:;">看微信<br/>更多我们的故事<a/></p>
+		<img src="images/weixin.png" />
 	</div>
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/respond.js />"></script>
 	<script>
 		$(function(){
 			//全屏滚动
@@ -429,6 +430,8 @@ Talk is cheap, Show me the code；<br/>
     			navigationColor:'#000000',
     			scrollOverflow:true,
     			css3:true,
+    			scrollBar: true,
+    			resize : true,
     			afterLoad: function(anchorLink, index){
 
     				$(".bottom-nav ul li").eq(index-1).addClass("active").siblings().removeClass("active");
@@ -511,6 +514,15 @@ Talk is cheap, Show me the code；<br/>
 				$.fn.fullpage.moveTo(n+1);	
 				$(this).addClass("active").siblings().removeClass("active");
 			});
+
+			$(".weixin a").click(function(){
+				// $(".weixin img").hide();
+				if($(".weixin img").css("display") == "block"){
+					$(".weixin img").css("display","none");
+				} else {
+					$(".weixin img").css("display","block");
+				}
+			})
 
 		});	
 	</script>

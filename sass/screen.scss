@@ -35,7 +35,6 @@ a {
 h2 {
     color: $color-pink;
     font-size: 46px;
-    line-height: 80px;
     font-weight: 900;
     text-align: center;
 }
@@ -92,12 +91,12 @@ h6 {
 header {
     position: fixed;
     left: 0;
-    top: 50px;
+    top: 35px;
     z-index: 8;
     width: 100%;
     .header_logo {
         position: relative;
-        padding-left: 100px;
+        padding-left: 50px;
         img {
             position: absolute;
             width: 180px;
@@ -105,13 +104,13 @@ header {
         }
         h3 {
             position: absolute;
-            left: 290px;
+            left: 250px;
             top: 0;
         }
     }
     .links {
         float: right;
-        padding-right: 40px;
+        padding-right: 30px;
         a {
 			display: block;
 			float: right;
@@ -159,7 +158,6 @@ header {
         width: 980px;
         height: 520px;
         position: relative;
-        top: -40px;
     }
     .section-header {
         overflow: auto;
@@ -168,7 +166,7 @@ header {
             font-size: 40px;
             float: left;
             position: relative;
-            top: 18px;
+            top: 0;
         }
         h2 {
             float: left;
@@ -206,11 +204,10 @@ header {
         width: 980px;
         height: 580px;
         position: relative;
-        top: -40px;
     }
     .index-title {
         position: relative;
-        height: 100px;
+        height: 80px;
     }
     h2 {
         position: absolute;
@@ -223,7 +220,7 @@ header {
     .zhuanchang-place {
         position: absolute;
         left: 610px;
-        top: 28px;
+        top: 18px;
         background: $color-pink;
         color: $color-white;
         font-size: 22px;
@@ -691,9 +688,11 @@ footer {
 }
 .weixin {
     position: fixed;
-    right: 40px;
+    right: 30px;
     bottom: 80px;
+    z-index: 100;
     img {
+        display: block;
         width: 115px;
         height: 115px;
     }
@@ -703,6 +702,9 @@ footer {
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 4px;
+        a {
+            color: $color-pink;
+        }
     }
 }
 @font-face {
@@ -823,4 +825,41 @@ footer {
 .icon-study:before {
 	content: "\e601";
 	color: $color-pink;
+}
+
+@media screen and (max-width: 1480px) and (max-height: 725px){
+    header { 
+        top: 10px;
+        .header_logo {
+            position: relative;
+            padding-left: 20px;
+            img {
+                width: 150px;
+            }
+            h3 {
+                left: 180px;
+                font-size: 22px;
+            }
+        }
+        .links {
+            padding-right: 20px;
+        }
+    }
+    .index.main {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1230px) and (max-height: 950px){
+    .weixin {
+        right: 20px;
+        bottom: 70px;
+        a {
+            cursor: pointer;
+        }
+        img {
+            display: none;
+        }
+    }
+    
 }
