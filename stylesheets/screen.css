@@ -277,19 +277,19 @@ header .links .join-us:hover span:before {
 
 /* line 189, ../sass/screen.scss */
 #section2 {
-  background: #e4e4e4 url(../images/2.png) bottom center no-repeat;
+  background: #e4e4e4 url(../images/bg-trans2.png) bottom center no-repeat;
   background-size: 100% 100%;
 }
 
 /* line 193, ../sass/screen.scss */
 #section3 {
-  background: #f3f3f3 url(../images/3.png) bottom center no-repeat;
+  background: #f3f3f3 url(../images/bg-trans1.png) bottom center no-repeat;
   background-size: 100% 100%;
 }
 
 /* line 197, ../sass/screen.scss */
 #section4 {
-  background: #e4e4e4 url(../images/1.png) bottom center no-repeat;
+  background: #e4e4e4 url(../images/bg-trans2.png) bottom center no-repeat;
   background-size: 100% 100%;
 }
 
