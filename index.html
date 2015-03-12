@@ -84,7 +84,8 @@
 			    				<div class="employee-content">
 			    					<p><span>“</span>
 			    						最流行的前沿技术，更开阔的国际视野，<br/>
-			    						以及持续不断的分享沟通，这些在ThoughtWorks我每天都在经历，等不及的小伙伴们，快快加入吧。
+			    						以及持续不断的分享沟通，这些在<br/>ThoughtWorks我每天都在经历，<br/>
+			    						等不及的小伙伴们，快快加入吧。
 			    					</p>
 
 			    					<h5>董莹<span>西安</span></h5>
@@ -97,7 +98,7 @@
 			    				</div>
 			    				<div class="employee-content">
 			    					<p><span>“</span>
-			    						写代码的乐趣是从加入ThoughtWorks的那一刻开始。
+			    						写代码的乐趣是从加入ThoughtWorks<br/>的那一刻开始。
 			    					</p>
 
 			    					<h5>杨眉<span>西安</span></h5>
@@ -417,6 +418,7 @@ Talk is cheap, Show me the code；<br/>
 		<p><a href="javascript:;">看微信<br/>更多我们的故事<a/></p>
 		<img src="images/weixin.png" />
 	</div>
+
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/wow.min.js"></script>
@@ -424,14 +426,14 @@ Talk is cheap, Show me the code；<br/>
 	<script>
 		$(function(){
 			//全屏滚动
-    		$("#fullpage").fullpage({
+        	$("#fullpage").fullpage({
     			navigation:true,
     			navigationPosition:'left',
     			navigationColor:'#000000',
     			scrollOverflow:true,
     			css3:true,
-    			scrollBar: true,
-    			resize : true,
+    			scrollBar: false,
+    			autoScrolling: true,
     			afterLoad: function(anchorLink, index){
 
     				$(".bottom-nav ul li").eq(index-1).addClass("active").siblings().removeClass("active");
@@ -447,7 +449,7 @@ Talk is cheap, Show me the code；<br/>
     		//页面底部按钮向下全屏滚动功能
     		$(".page-down-btn").click(function(){
     			$.fn.fullpage.moveSectionDown();				
-    		})
+    		});
 
     		//动画效果
     		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
